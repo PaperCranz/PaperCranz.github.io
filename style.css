@@ -1,0 +1,67 @@
+
+root {
+    --bg-color: green;
+}
+
+.white {
+    background-color:antiquewhite;
+}
+
+#secondColor {
+    background-color:darkblue;
+}
+
+#link > li {
+    background-color:cadetblue;
+}
+
+.flex{
+    display: flex;
+}
+.flex > a{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    align-items: center;
+    justify-content: center;;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex-basis: 1000px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.project:hover {
+    animation: rgb 5s infinite;
+}
+
+@keyframes rgb {
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    15%{
+        color: rgb(255,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    85%{
+        color: rgb(255,0,255);
+    }
+}
